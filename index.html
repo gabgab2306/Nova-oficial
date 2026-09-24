@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA · Leadership Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="stars"></div>
+<main class="portal">
+<section class="hero">
+<div class="nova-mark"><span class="mark-orbit"></span><span class="mark-star">✦</span></div>
+<div class="nova-word">NOVA</div><div class="nova-sub">LEADERSHIP CLUB</div>
+<p class="institution">Instituto Politécnico Aragón</p>
+<p class="hero-copy">Un espacio para aprender, debatir, liderar y convertir ideas en acción.</p>
+</section>
+<section id="roleGateway" class="role-gateway">
+<button class="role-card role-directiva" data-open="loginPanel"><span class="role-icon">♜</span><span class="role-kicker">ÁREA PRIVADA</span><strong>Directiva</strong><small>Acceso al centro de gestión de NOVA</small><span class="role-arrow">→</span></button>
+<button class="role-card role-integrante" data-open="registerPanel"><span class="role-icon">◇</span><span class="role-kicker">NUEVA GENERACIÓN</span><strong>Integrante</strong><small>Completa tu pre-registro para formar parte del club</small><span class="role-arrow">→</span></button>
+</section>
+<section id="loginPanel" class="form-screen">
+<button class="back-link" data-back>← Volver</button>
+<div class="form-heading"><span class="section-tag">DIRECTIVA</span><h1>Bienvenida al centro NOVA</h1><p>Acceso reservado a los correos autorizados.</p></div>
+<form id="loginForm" class="glass-form">
+<label>Correo<input id="loginEmail" type="email" autocomplete="email" required placeholder="correo autorizado"></label>
+<label>Contraseña<input id="loginPassword" type="password" autocomplete="current-password" required placeholder="••••••••"></label>
+<button class="primary" type="submit"><span>Entrar al dashboard</span><b>↗</b></button><p id="loginMsg" class="msg"></p>
+</form></section>
+<section id="registerPanel" class="form-screen">
+<button class="back-link" data-back>← Volver</button>
+<div class="form-heading"><span class="section-tag">INTEGRANTE</span><h1>Tu lugar en NOVA comienza aquí</h1><p>Completa tu pre-registro. La Directiva revisará tu solicitud antes de aprobarla.</p></div>
+<form id="registerForm" class="glass-form">
+<div class="progress-line"><span class="active"></span><span></span><span></span></div>
+<div class="form-grid">
+<label>Nombre completo<input id="name" required placeholder="Tu nombre"></label>
+<label>Curso<input id="course" required placeholder="6to E"></label>
+<label>Sección<input id="section" required placeholder="E"></label>
+<label>Teléfono<input id="phone" required placeholder="809-000-0000"></label>
+<label class="full">Correo electrónico<input id="email" type="email" required placeholder="tucorreo@email.com"></label>
+<label class="full">Intereses<input id="interests" required placeholder="MUN, debate, oratoria, liderazgo..."></label>
+</div>
+<label class="experience-toggle"><input id="hasExp" type="checkbox"><span class="toggle-ui"></span><span><b>Tengo experiencia previa</b><small>Participación en MUN, debate, liderazgo, oratoria u otros espacios.</small></span></label>
+<label>Detalle de experiencia<textarea id="expDetail" rows="3" disabled placeholder="Cuéntanos brevemente..."></textarea></label>
+<label>¿Por qué quieres formar parte de NOVA?<textarea id="motivation" rows="4" required placeholder="Queremos conocer tus motivaciones."></textarea></label>
+<button class="primary" type="submit"><span>Enviar pre-registro</span><b>✦</b></button><p id="registerMsg" class="msg"></p>
+</form></section></main>
+<div id="houseReveal" class="house-reveal" aria-hidden="true">
+<div class="reveal-backdrop"></div><div class="reveal-grid"></div><div class="reveal-aura"></div>
+<div class="reveal-heading"><span class="reveal-title">NOVA</span><span class="reveal-kicker">CINCO CAMINOS · UNA CONSTELACIÓN</span></div>
+<div class="house-sequence">
+<div class="sequence-house house-fenix"><span class="sequence-icon emblem-fenix">ϟ</span><small>01 / 05 · CASA</small><h2>Fénix</h2><p>Renacer. Transformar. Avanzar.</p></div>
+<div class="sequence-house house-cronos"><span class="sequence-icon emblem-cronos">◷</span><small>02 / 05 · CASA</small><h2>Cronos</h2><p>Disciplina. Estrategia. Visión.</p></div>
+<div class="sequence-house house-argos"><span class="sequence-icon emblem-argos">◉</span><small>03 / 05 · CASA</small><h2>Argos</h2><p>Observar. Comprender. Anticipar.</p></div>
+<div class="sequence-house house-pegaso"><span class="sequence-icon emblem-pegaso">⌁</span><small>04 / 05 · CASA</small><h2>Pegaso</h2><p>Libertad. Imaginación. Futuro.</p></div>
+<div class="sequence-house house-olimpo"><span class="sequence-icon emblem-olimpo">△</span><small>05 / 05 · CASA</small><h2>Olimpo</h2><p>Liderazgo. Propósito. Grandeza.</p></div>
+<div class="sequence-final"><span class="final-mark">✦</span><strong>¿En cuál estás tú?</strong><small>Cinco casas · una comunidad · un camino</small></div>
+<div class="floating-houses">
+<div class="floating-house pegaso"><span class="mini-emblem emblem-pegaso">⌁</span><b>Pegaso</b></div><div class="floating-house cronos"><span class="mini-emblem emblem-cronos">◷</span><b>Cronos</b></div><div class="floating-house fenix"><span class="mini-emblem emblem-fenix">ϟ</span><b>Fénix</b></div><div class="floating-house argos"><span class="mini-emblem emblem-argos">◉</span><b>Argos</b></div><div class="floating-house olimpo"><span class="mini-emblem emblem-olimpo">△</span><b>Olimpo</b></div>
+</div></div><button id="closeReveal" class="reveal-close">Continuar <span>↗</span></button></div>
+<script src="js/app.js"></script></body></html>
